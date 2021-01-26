@@ -1,4 +1,4 @@
-public class throw {
+public class Throw {
 
     private double y0;
     private double v0;
@@ -17,7 +17,7 @@ public class throw {
     private double g = 9.81;
     private double aY = -g;
 
-    Wurf(double y0, double v0, double alpha) {
+    Throw(double y0, double v0, double alpha) {
         this.y0 = y0;
         this.v0 = v0;
         this.alpha = alpha * (Math.PI / 180);
