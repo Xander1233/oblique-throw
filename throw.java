@@ -1,6 +1,4 @@
-import java.awt.geom.RectangularShape;
-
-public class Wurf {
+public class throw {
 
     private double y0;
     private double v0;
@@ -14,7 +12,7 @@ public class Wurf {
     private double v0X;
     private double v0Y;
 
-    private double[] scheitelpunkt = new double[2];
+    private double[] vertex = new double[2];
 
     private double g = 9.81;
     private double aY = -g;
@@ -25,7 +23,7 @@ public class Wurf {
         this.alpha = alpha * (Math.PI / 180);
     }
 
-    public double[][] berechneWurfparabel(double dt) {
+    public double[][] calculate(double dt) {
 
         /**
          * Calculate the overall time
@@ -59,9 +57,9 @@ public class Wurf {
         return result;
     }
 
-    public void setScheitelpunkt(double x, double y) {
-        this.scheitelpunkt[0] = x;
-        this.scheitelpunkt[1] = y;
+    public void setVertex(double x, double y) {
+        this.vertex[0] = x;
+        this.vertex[1] = y;
     }
 
     public double getY0() {
@@ -88,7 +86,7 @@ public class Wurf {
         return this.tMax;
     }
 
-    public double[] getScheitelpunkt() {
-        return this.scheitelpunkt;
+    public double[] getVertex() {
+        return this.vertex;
     }
 }
